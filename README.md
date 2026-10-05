@@ -11,6 +11,11 @@
 **引擎**：**AtomicBot b10269-1.6.0** + 思考治理三件套
 > `--reasoning on --reasoning-budget 2048 --reasoning-budget-message "..." --reasoning-preserve`（有界思考：不会吃光输出配额，长会话保留思考轨迹）
 
+
+![kat-coder-35b-8g-tuning 实测图表](docs/tuning-matrix.png)
+
+**哪个参数最有效**：六组配置在短上下文下的对比。`b512 ncmoe35 t6` 相比基线预填充 +25%。原始数据见 `data/data_matrix`。
+
 ## 生产配置（start.bat 即仓库内同名文件，零漂移）
 
 ```bat
